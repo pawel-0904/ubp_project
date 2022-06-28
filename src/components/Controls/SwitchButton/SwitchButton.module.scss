@@ -1,0 +1,253 @@
+.Switch {
+  position: relative;
+
+  display: inline-block;
+
+  width: 64px;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+  text-align: left;
+  vertical-align: middle;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    border: 0 solid #bbb;
+    border-radius: 20px;
+
+    &:focus {
+      position: relative;
+      outline: 6px solid #dcf8dc;
+    }
+  }
+
+  &__inner {
+    display: block;
+
+    width: 200%;
+    margin-left: -100%;
+
+    transition: margin 0.3s ease-in 0s;
+
+    &:before,
+    &:after {
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 36px;
+
+      display: block;
+      float: left;
+
+      box-sizing: border-box;
+      width: 50%;
+      height: 36px;
+      padding: 0;
+
+      color: white;
+    }
+
+    &:before {
+      content: '';
+      text-transform: uppercase;
+
+      color: #fff;
+      background-color: #21ba72;
+    }
+  }
+
+  &__disabled {
+    .Switch__inner {
+      &:before,
+      &:after {
+        cursor: not-allowed;
+
+        background-color: #ced5d8;
+      }
+
+      &:before {
+        background-color: #c0e4cf;
+      }
+    }
+
+    .Switch__switch {
+      cursor: not-allowed;
+    }
+  }
+
+  &:Hover {
+    .Switch__inner {
+      &:before,
+      &:after {
+        background-color: #6b7281;
+      }
+
+      &:before {
+        background-color: #1f8468;
+      }
+    }
+  }
+
+  &__inner:after {
+    content: '';
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #7b8395;
+  }
+
+  &__switch {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    bottom: 0;
+
+    display: block;
+
+    width: 32px;
+    margin: 2px;
+
+    transition: all 0.3s ease-in 0s;
+
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  &__checkbox:checked + &__label {
+    .Switch__inner {
+      margin-left: 0;
+    }
+
+    .Switch__switch {
+      right: 0;
+    }
+  }
+
+  &__small {
+    width: 40px;
+
+    .switch__label {
+      &:focus {
+        position: relative;
+
+        outline: 4px solid #dcf8dc;
+      }
+    }
+
+    .Switch__inner {
+      &:after,
+      &:before {
+        font-size: 9px;
+        line-height: 22px;
+
+        height: 22px;
+      }
+    }
+
+    .Switch__switch {
+      right: 18px;
+
+      width: 20px;
+      margin: 1px;
+    }
+  }
+}
+
+.Switch.Switch__title {
+  width: 70px;
+
+  .Switch__inner {
+    &:before {
+      padding-top: 0;
+      padding-left: 12px;
+
+      content: 'ДА';
+    }
+
+    &:after {
+      padding-right: 9px;
+
+      content: 'НЕТ';
+    }
+  }
+
+  .Switch__switch {
+    right: 34px;
+  }
+}
+
+.Switch__small.Switch__title {
+  width: 46px;
+
+  .Switch__inner {
+    &:before {
+      padding-left: 7px;
+
+      content: 'ДА';
+    }
+
+    &:after {
+      padding-right: 4px;
+
+      content: 'НЕТ';
+    }
+  }
+
+  .Switch__switch {
+    right: 24px;
+  }
+}
+
+.Switch.Switch__icon {
+  width: 70px;
+
+  .Switch__inner {
+    &:before {
+      padding-top: 6px;
+      padding-left: 8px;
+
+      content: url('data:image/svg+xml,%3Csvg width=\'24\' height=\'24\' viewBox=\'0 0 24 24\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M18.8569 6.85715L9.42829 16.2857L5.14258 12\' stroke=\'white\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E');
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+
+  .Switch__switch {
+    right: 34px;
+  }
+}
+
+.Switch__small.Switch__icon {
+  width: 46px;
+
+  .Switch__inner {
+    &:before {
+      padding-top: 4px;
+      padding-left: 7px;
+
+      content: url('data:image/svg+xml,%3Csvg width=\'14\' height=\'14\' viewBox=\'0 0 14 14\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 4L5.5 9.5L3 7\' stroke=\'white\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E%0A');
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+
+  .Switch__switch {
+    right: 24px;
+  }
+}
