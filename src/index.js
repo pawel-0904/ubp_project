@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import C from "./constants/C";
+import {Settings, SignIn, Main} from "./containers";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App>
+        <Switch>
+          <Route exact path={C.routes.MAIN} component={Main} />
+          <Route exact path={C.routes.SETTINGS} component={Settings} />
+          <Route exact path={C.routes.SIGN_IN} component={SignIn} />
+        </Switch>
+      </App>
+    </Router>
   </React.StrictMode>
 );
 

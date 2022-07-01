@@ -1,4 +1,4 @@
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -53,7 +53,9 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
-        // new webpack.HotModuleReplacementPlugin(),
+        new ReactRefreshWebpackPlugin(),
+        // new webpack.DefinePlugin()
+
         // new InterpolateHtmlPlugin({
         //     PUBLIC_URL: 'public' // can modify `static` to another name or get it from `process`
         // })
