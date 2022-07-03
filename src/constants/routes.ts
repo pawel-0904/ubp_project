@@ -1,5 +1,7 @@
 export default {
   MAIN: '/',
   SIGN_IN: '/signIn',
-  SETTINGS: '/settings'
+  SETTINGS: '/settings',
+  REGISTER: '/register',
+  GENERAL: '/general',
 };

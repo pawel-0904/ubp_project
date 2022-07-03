@@ -4,23 +4,30 @@ import styles from './App.module.scss';
 import SwitchButton from "./components/Controls/SwitchButton/SwitchButton";
 import Button from  "./components/Controls/Button/Button";
 import styled from 'styled-components'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import C from './constants/C'
 // import { Main, SignIn } from './containers';
-import { SignIn, Main, Settings }  from './containers';
-import Header from "./containers/Header/header";
+import {SignIn, Main, Register, Settings, General} from './containers';
+import Header from "./containers/Header/Header";
 
 
 const AppBody = () => {
 
   return (
     <>
-      <Switch>
-        <Route exact path={C.routes.SIGN_IN} component={SignIn} />
-        <Route exact path={C.routes.MAIN} component={Main} />
-        <Route exact path={C.routes.SETTINGS} component={Settings} />
+      {/*<Header />*/}
+      <Routes basename={C.routes.MAIN}>
+        <Route exact path={C.routes.MAIN} element={<Main/>} >
+          <Route path={'settings'} element={<Settings/>} />
+          <Route exact path={C.routes.REGISTER} element={<Register />} />
+          {/*<Route path={C.routes.GENERAL}  element={<General />} />*/}
+          <Route index element={<General />} />
+        </Route>
+
+        <Route path={C.routes.SIGN_IN} element={<SignIn />} />
+        <Route path="*" element={<SignIn />} />
         {/*<SwitchButton />*/}
-      </Switch>
+      </Routes>
     </>
   )
 };
@@ -29,12 +36,12 @@ const App = ({ children }) =>
   (
     <div className={styles.App}>
       {/*<header className={styles.App_header}>*/}
-      {/*<Router>*/}
+      <Router basename={'/'}>
         {/*<Router basename={process.env.PUBLIC_URL}> //TODO: вот тут потом поставить норм переменную*/}
         {/*<img src={logo} className={styles.App_logo} alt="logo" />*/}
-        {/*<AppBody />*/}
-        <Header />
-        {children}
+        <AppBody />
+        {/*<Header />*/}
+        {/*{children}*/}
 
         {/*<p>*/}
         {/*  Edit <code>src/App.js</code> and save to Reload.*/}
@@ -51,7 +58,7 @@ const App = ({ children }) =>
         {/*</a>*/}
         {/*<SwitchButton></SwitchButton>*/}
         {/*<ButtonStyled/>*/}
-        {/*</Router>*/}
+        </Router>
       {/*</header>*/}
     {/*</Router>*/}
     </div>

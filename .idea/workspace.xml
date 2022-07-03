@@ -2,31 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ed19805-780e-44b2-9b0d-0494bd511020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/Tabs/Tab/Tab.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/Tabs/Tab/Tab.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/Tabs/Tabs.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/Tabs/Tabs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/C.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Header/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Main/Main.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Main/Main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Settings/Settings.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Settings/Settings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/SignIn/SignIn.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/SignIn/SignIn.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useGo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useLocation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resourses/R.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resourses/dictionary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/General/General.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/General/General.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Register/Register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Main/Main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Settings/Settings.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Settings/Settings.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SignIn/SignIn.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SignIn/SignIn.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useGo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useGo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
