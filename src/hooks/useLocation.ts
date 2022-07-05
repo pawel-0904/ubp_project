@@ -1,4 +1,3 @@
-// @ts-ignore
 import { useLocation as useLocationRouter } from 'react-router-dom';
 
 const useLocation = () => {

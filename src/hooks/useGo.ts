@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
-  return useCallback((url: string) => () => history(url), [history]);
+  return useCallback((url: string) => () => navigate(url), [navigate]);
 };

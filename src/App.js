@@ -1,17 +1,35 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './assets/icons/logo.svg'
 import styles from './App.module.scss';
 import SwitchButton from "./components/Controls/SwitchButton/SwitchButton";
-import Button from  "./components/Controls/Button/Button";
+import Button from  './components/Controls/Button/Button';
 import styled from 'styled-components'
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, Navigate } from 'react-router-dom';
 import C from './constants/C'
 // import { Main, SignIn } from './containers';
 import {SignIn, Main, Register, Settings, General} from './containers';
 import Header from "./containers/Header/Header";
-
+// import { useNavigate } from 'react-router-dom';
+// import useGo from './hooks/useGo';
+// import useLocation from './hooks/useLocation'
 
 const AppBody = () => {
+
+  // const go = useGo();
+  //
+  // let navigate = useNavigate();
+  //
+  // console.log('location ', location.pathname);
+  //
+  //
+  // useEffect(() => {
+  //
+  //   return go(C.routes.SIGN_IN)
+  // },[go])
+  // //
+  // console.log('useGo(C.routes.SIGN_IN); ', go(C.routes.SIGN_IN));
+
+  const user = false;
 
   return (
     <>
@@ -19,7 +37,8 @@ const AppBody = () => {
       <Routes basename={C.routes.MAIN}>
         <Route exact path={C.routes.MAIN} element={<Main/>} >
           <Route path={'settings'} element={<Settings/>} />
-          <Route exact path={C.routes.REGISTER} element={<Register />} />
+          <Route exact path={C.routes.REGISTER} element={!user ? <Navigate to={C.routes.SIGN_IN} replace /> :  <Register />} />
+
           {/*<Route path={C.routes.GENERAL}  element={<General />} />*/}
           <Route index element={<General />} />
         </Route>

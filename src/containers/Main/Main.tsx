@@ -16,14 +16,14 @@ const navigationTabsList = Object.values(navigationTabs);
 const Main: React.FC = () => {
 
   // const go = useGo();
-  const location = useLocation();
+  // const location = useLocation();
 
-  console.log('location ', location);
+  // console.log('location ', location.pathname);
 
   return (
     <>
     <div className={styles.Main}>
-      Основной экран
+      {/*Основной экран*/}
     {/*  <Tabs>*/}
     {/*    {*/}
     {/*      navigationTabsList.map(tab => (*/}
