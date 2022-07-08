@@ -33,19 +33,15 @@ const AppBody = () => {
 
   return (
     <>
-      {/*<Header />*/}
       <Routes basename={C.routes.MAIN}>
         <Route exact path={C.routes.MAIN} element={<Main/>} >
           <Route path={'settings'} element={<Settings/>} />
           <Route exact path={C.routes.REGISTER} element={!user ? <Navigate to={C.routes.SIGN_IN} replace /> :  <Register />} />
-
-          {/*<Route path={C.routes.GENERAL}  element={<General />} />*/}
           <Route index element={<General />} />
         </Route>
 
         <Route path={C.routes.SIGN_IN} element={<SignIn />} />
         <Route path="*" element={<SignIn />} />
-        {/*<SwitchButton />*/}
       </Routes>
     </>
   )
