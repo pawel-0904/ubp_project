@@ -2,45 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ed19805-780e-44b2-9b0d-0494bd511020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useFetch/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useFetch/useFetch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/addElementToArray.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/createAndIndexFill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/findElementAndIndex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/getMaxInArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/getMinInArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/makeHashMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/arrays/times.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/checks/isNil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getDateLocal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getDateObject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getDateString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getDateTransferFormat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getDaysInMonth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getFirstMonthQuarter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getISODateWithotSss.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getMonthsWithId.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/getQuarterFromDate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates/parseDateString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getOrderIconName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getSort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/http/http.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/http/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/noop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/numbers/roundDecimals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objects/isObject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objects/omit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objects/omitBy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objects/omitNils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objects/removeUndefinedFields.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/objects/zipObject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/text/declension.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/bill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/exchange.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/moneyBox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/security.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/transfer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/general.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recoil/atoms/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recoil/atoms/isAuthState.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/SignIn/SignIn.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SignIn/SignIn.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/SignIn/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SignIn/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/C.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/C.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/General/General.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/General/General.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/General/General.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/General/General.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NavigationBar/NavigationBar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NavigationBar/NavigationBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Main/Main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register/Register.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Settings/Settings.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Settings/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SignIn/SignIn.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SignIn/SignIn.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SignIn/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SignIn/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/http/http.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/http/http.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +42,13 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="ubp_project" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -84,7 +84,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -99,13 +99,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/hooks" />
       <recent name="$PROJECT_DIR$/src/containers/Settings" />
       <recent name="$PROJECT_DIR$/src/containers" />
-      <recent name="$PROJECT_DIR$/src/asset/svg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -166,7 +167,7 @@
       <workItem from="1656400784363" duration="21343000" />
       <workItem from="1656660781578" duration="2331000" />
       <workItem from="1656666388419" duration="2014000" />
-      <workItem from="1656851428702" duration="25685000" />
+      <workItem from="1656851428702" duration="47354000" />
     </task>
     <task id="LOCAL-00001" summary="Create React APP">
       <created>1656433135422</created>
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657038176158</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added ability to send http requests">
+      <created>1657290878670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657290878670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -220,6 +228,7 @@
     <MESSAGE value="Create React APP" />
     <MESSAGE value="Added several pages" />
     <MESSAGE value="Made routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made routing" />
+    <MESSAGE value="Added ability to send http requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ability to send http requests" />
   </component>
 </project>

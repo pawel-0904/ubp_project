@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
+import { useRecoilState } from 'recoil';
 import styles from './SignIn.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { http } from '../../utils/http/http';
+import { isAuthState } from '../../recoil/atoms';
 
 type TSignInResponse = {
   kind: string
@@ -16,6 +18,8 @@ type TSignInResponse = {
 };
 
 const SignIn: React.FC = () => {
+
+  const [authState, setAuthState] = useRecoilState<boolean>(isAuthState);
 
   const navigate = useNavigate();
 
@@ -42,15 +46,27 @@ const SignIn: React.FC = () => {
     const resp = http<TSignInResponse>(url, body);
 
     resp.then(response => {
-      // console.log('resp ', response.parsedBody?.email)
       if (response.status === 200) {
-        navigate('/');
+        setAuthState(true);
       }
       else {
         setError('Incorrect Login');
       }
     });
   };
+
+  const handleOnKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      handleOnClick();
+    }
+  };
+
+  useEffect(() => {
+    if (authState) {
+      navigate('/');
+    }
+  }, [authState])
 
   return (
     <div className={styles.SignIn}>
@@ -65,6 +81,7 @@ const SignIn: React.FC = () => {
         placeholder={'Введите password'}
         onChange={handleOnChangePassword}
         value={password}
+        onKeyDown={handleOnKeyDown}
       />
       {error && <span>{error}</span>}
       <button

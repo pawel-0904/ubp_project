@@ -5,7 +5,8 @@ const Settings: React.FC = () => {
 
   return (
     <div className={styles.Settings}>
-      Экран с настройками
+      <li><span>Экран с настройками</span></li>
+      <li><span>какой-то контпент</span></li>
     </div>
   );
 };

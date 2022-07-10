@@ -9,4 +9,9 @@ declare module "*.png" {
   export = value;
 }
 
+declare module "*.svg" {
+  const value: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+  export = value;
+}
+
 declare module "*.module.scss";
