@@ -48,6 +48,7 @@ const SignIn: React.FC = () => {
     resp.then(response => {
       if (response.status === 200) {
         setAuthState(true);
+        localStorage.setItem('isAuthUser', JSON.stringify({isAuth: true}));
       }
       else {
         setError('Incorrect Login');
@@ -71,23 +72,25 @@ const SignIn: React.FC = () => {
   return (
     <div className={styles.SignIn}>
       Экран входа
-      <input
-        placeholder={'Введите логин'}
-        onChange={handleOnChangeLogin}
-        value={login}
-      />
-      <input
-        type={"password"}
-        placeholder={'Введите password'}
-        onChange={handleOnChangePassword}
-        value={password}
-        onKeyDown={handleOnKeyDown}
-      />
-      {error && <span>{error}</span>}
-      <button
-        onClick={handleOnClick}>
-        Login
-      </button>
+      <div className={styles.SignIn__Wrapper}>
+        <input
+          placeholder={'Введите логин'}
+          onChange={handleOnChangeLogin}
+          value={login}
+        />
+        <input
+          type={"password"}
+          placeholder={'Введите password'}
+          onChange={handleOnChangePassword}
+          value={password}
+          onKeyDown={handleOnKeyDown}
+        />
+        {error && <span>{error}</span>}
+        <button
+          onClick={handleOnClick}>
+          Login
+        </button>
+      </div>
 
     </div>
   );

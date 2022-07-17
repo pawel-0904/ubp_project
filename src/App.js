@@ -15,10 +15,10 @@ const AppBody = () => {
     <>
       <Routes basename={C.routes.MAIN}>
         {/*<Routes basename={process.env.PUBLIC_URL}> //TODO: вот тут потом поставить норм переменную*!/*/}
-        <Route exact path={C.routes.MAIN} element={isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <Main/>} >
-          <Route path={C.routes.SETTINGS} element={isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <Settings/>} />
-          <Route exact path={C.routes.REGISTER} element={isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <Register />} />
-          <Route index element={isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <General />} />
+        <Route exact path={C.routes.MAIN} element={!isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <Main/>} >
+          <Route path={C.routes.SETTINGS} element={!isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <Settings/>} />
+          <Route exact path={C.routes.REGISTER} element={!isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <Register />} />
+          <Route index element={!isAuth ? <Navigate to={C.routes.SIGN_IN} replace /> : <General />} />
         </Route>
         <Route path={C.routes.SIGN_IN} element={<SignIn />} />
         <Route path="*" element={<SignIn />} />

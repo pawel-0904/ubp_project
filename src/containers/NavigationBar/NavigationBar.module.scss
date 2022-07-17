@@ -22,14 +22,15 @@
 
 .sidenav__a {
   position: relative;
-  padding: 16px 8px 8px 32px;
+  padding: 16px 8px 8px 16px;
   text-decoration: none;
   color: #818181;
   display: flex;
-  transition: 0.3s;
+  //transition: 14.3s;
   align-items: center;
   //height: 24px;
   font-size: 22px;
+
 }
 
 .sidenav__a:hover {
@@ -38,20 +39,22 @@
 
 .sidenav__closeBtn {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 20px;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   color: white;
+  cursor: pointer;
 }
 
-//#main {
-//  transition: margin-left .5s;
-//  padding: 16px;
-//}
-
 @media screen and (max-height: 450px) {
-  .sidenav {padding: 20px 20px;}
+  .sidenav {
+    padding: 30px 20px;
+    width: 160px;
+    &__small {
+      width: 60px;
+    }
+  }
   .sidenav a {font-size: 18px;}
 }
 
@@ -60,4 +63,9 @@
   height: 22px;
   width: 22px;
   padding: 2px 10px 2px 0;
+}
+
+.chevron {
+  height: 15px;
+  width: 15px;
 }
