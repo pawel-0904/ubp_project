@@ -1,5 +1,5 @@
 .sidenav__wrapper {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
 .sidenav {
@@ -13,7 +13,9 @@
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding: 40px 20px;
+  padding: 70px 20px;
+  box-shadow: 10px 0 10px rgba(0,0,0,0.5);
+  z-index: 2;
 
   &__small {
     width: 70px;
@@ -39,7 +41,7 @@
 
 .sidenav__closeBtn {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
   font-size: 25px;
   margin-bottom: 20px;
@@ -49,7 +51,7 @@
 
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding: 30px 20px;
+    padding: 50px 20px;
     width: 160px;
     &__small {
       width: 60px;

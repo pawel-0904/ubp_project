@@ -1,0 +1,17 @@
+.Header {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.SingOut {
+  width: 100px; /* Full-width */
+  height: 50px;
+  margin-right: 20px;
+}

@@ -1,5 +1,5 @@
 .SignIn {
-  background: cornflowerblue;
+  background: darkgray;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,13 @@
     flex-direction: column;
     height: fit-content;
     width: 200px;
+    padding: 50px 30px;
     margin: auto auto;
     align-items: center;
+    border-radius: 5px;
+    //border: solid 1px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    //padding: 10px;
 
     & > input {
       width: 130px;
@@ -24,4 +29,8 @@
       margin-top: 20px;
     }
   }
+}
+
+.Input {
+  margin-bottom: 25px !important;
 }

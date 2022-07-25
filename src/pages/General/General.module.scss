@@ -3,3 +3,30 @@
   min-height: 100vh;
   width: 100%;
 }
+
+.Slider {
+  width: 100px;
+  color: black;
+}
+
+.MenuItem {
+  color: black;
+}
+
+/* Increase the specificity */
+.MenuItem.Mui-selected {
+  color: orange;
+}
+
+.Button {
+  color: greenyellow !important;
+}
+
+/* Increase the specificity */
+.Button:disabled {
+  color: red;
+}
+
+.Icon {
+  color: red;
+}

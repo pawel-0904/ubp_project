@@ -1,8 +1,12 @@
 .Main {
   display: flex;
-  //background: darkcyan;
   min-height: 100%;
-  //flex-direction: column;
+  flex-direction: row;
   //justify-content: space-between;
 
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }

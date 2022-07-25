@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import { NavLink }  from "react-router-dom";
-import useGo  from '../../hooks/useGo';
 import styles from './NavigationBar.module.scss';
 import { moneyBox, bill, bank, card, exchange, security} from '../../assets/icons/'
 import cx from "clsx";
+import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
 const NavigationBar = () => {
-  const go = useGo();
 
   const [isOpenSideBarState, setIsOpenSideBarState] = useState<boolean>(true);
 
@@ -15,16 +15,16 @@ const NavigationBar = () => {
   };
 
   return (
-  <div className={styles.sidenav__wrapper }>
+  <div className={styles.sidenav__wrapper}>
     <nav className={cx(styles.sidenav,
       { [styles[`sidenav__small`]]: !isOpenSideBarState })
     }>
-      {/*Title*/}
-      {/*<ul className={styles.widget__list}>*/}
         <a className={styles.sidenav__closeBtn} onClick={handleOnClick} >
           {isOpenSideBarState ?
-            <img className={styles.chevron} src={security} alt={'security'}/> :
-            <img className={styles.chevron} src={exchange} alt={'exchange'} />
+            // <img className={styles.chevron} src={security} alt={'security'}/> :
+            // <img className={styles.chevron} src={exchange} alt={'exchange'} />
+            <ArrowCircleLeftOutlinedIcon color={"inherit"}/>:
+            <ArrowCircleRightOutlinedIcon color={"inherit"}/>
           }
         </a>
         <a>
@@ -51,9 +51,6 @@ const NavigationBar = () => {
             {isOpenSideBarState && <span>SignIn</span>}
           </NavLink>
         </a>
-
-      {/*</ul>*/}
-      {/*<button onClick={go('/signIn')}>кнопка</button>*/}
     </nav>
   </div>
 )}
